@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PurePath</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="top">
+      <img src="icon.png" alt="PurePath logo" class="logo" />
+      <div class="title-wrap">
+        <div class="title">PurePath</div>
+        <div class="subtitle">AI Accessibility Assistant</div>
+      </div>
+    </header>
+
+    <main>
+      <div class="controls">
+        <div class="mode-select">
+          <label for="mode">Mode:</label>
+          <select id="mode">
+            <option value="developer">Developer Mode</option>
+            <option value="user">User Mode</option>
+          </select>
+        </div>
+        <div class="btns">
+          <button id="backBtn" class="ghost">Back</button>
+          <button id="scanBtn" class="primary">Scan Page</button>
+          <button id="restoreBtn" class="ghost">Restore</button>
+        </div>
+      </div>
+
+      <div id="statusBar" class="status-bar" aria-live="polite"></div>
+
+      <div id="apiRow" class="api-row">
+        <input id="apiInput" placeholder="OpenAI API Key (optional for AI)" />
+        <button id="saveApiBtn" class="small-btn">Save</button>
+      </div>
+
+      <div id="summary" class="summary-card" hidden>
+        <div class="score-row">
+          <div class="score-left">
+            <div class="score-circle" id="scoreRing">0%</div>
+            <div class="score-label muted">Overall accessibility</div>
+          </div>
+          <div class="score-right">
+            <div class="score-values">
+              <div><span class="label">Accessible</span> <span id="goodPct">0%</span></div>
+              <div><span class="label">Issues</span> <span id="badPct">0%</span></div>
+            </div>
+            <div class="progress-wrap">
+              <div id="progressBar" class="progress-bar">
+                <div id="progressFill" class="progress-fill" style="width:0%"></div>
+              </div>
+              <div class="legend"><span class="green">Good</span><span class="red">Issues</span></div>
+            </div>
+            <div class="sub-scores">
+              <div class="muted">
+                Color: <b id="colorScore">0%</b> &nbsp; | &nbsp;
+                Alt text: <b id="altScore">0%</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modeContent">
+        <div id="devList" style="display:none;"></div>
+        <div id="userList" style="display:none;"></div>
+      </div>
+
+      <div id="patchBox" class="copy-box" style="display:none;">No scan yet.</div>
+      <div id="userResult" class="note" style="display:none;"></div>
+
+      <div class="footer">
+        <small class="muted">
+          AI features require an OpenAI key (stored locally only). All page changes are temporary and local.
+        </small>
+      </div>
+    </main>
+  </div>
+
+  <script src="utils.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
