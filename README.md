@@ -2,7 +2,7 @@
 
 AI-powered Chrome extension that detects accessibility issues, fixes color contrast, generates alt text, and provides one-click accessible views for color-blind and low-vision users.
 
-**⭐ Overview**
+**Overview**
 
 PurePath is an AI-driven accessibility tool designed for developers and end-users.
 It scans any webpage, detects WCAG accessibility issues, and provides AI-powered fixes like contrast correction, safe color suggestions, and automatic alt-text generation.
@@ -11,8 +11,8 @@ For users, PurePath offers one-click accessibility modes such as high contrast, 
 
 Built for the real world. Designed for impact.
 
-**🎯 Key Features**
-  **🔍 Developer Mode**
+**Key Features**
+  **Developer Mode**
 
   Full-page accessibility scan
 
@@ -30,7 +30,7 @@ Built for the real world. Designed for impact.
 
   No backend — everything runs client-side
 
-  **👁‍🗨 User Mode (One-Click Assistive View)**
+  ** User Mode (One-Click Assistive View)**
 
   High Contrast Mode
 
@@ -50,7 +50,7 @@ Built for the real world. Designed for impact.
 
 Improves readability without modifying the website’s source
 
-**🧠 AI Capabilities**
+** AI Capabilities**
 
   Suggests WCAG-compliant color fixes
   
@@ -60,7 +60,7 @@ Improves readability without modifying the website’s source
   
   Uses OpenAI API (key stored locally only)
 
-**🧩 How It Works**
+** How It Works**
 
   1.Install extension → Load any webpage
   
@@ -74,7 +74,7 @@ Improves readability without modifying the website’s source
   
   6.Use Restore anytime to return to original page
 
-**📦 Installation (Developer Setup)**
+** Installation (Developer Setup)**
 1️⃣ Clone or download this repository
   git clone https://github.com/DHEENADHAYALAN-M/PurePath-AI-Accessibility-Assistent.git
 
@@ -87,7 +87,7 @@ Improves readability without modifying the website’s source
 
 You should now see PurePath in your extensions list.
 
-**🔑 OpenAI API Key (Optional for AI features)**
+** OpenAI API Key (Optional for AI features)**
 
 PurePath works without AI, but AI features require a key.
 
@@ -99,7 +99,7 @@ PurePath works without AI, but AI features require a key.
 
 The key is stored locally only — never uploaded.
 
-**📁 Project Structure**
+**Project Structure**
   PurePath/
   │── background.js
   │── content.js
@@ -112,7 +112,7 @@ The key is stored locally only — never uploaded.
   │── README.md
   │── LICENSE
 
-**🔮 Future Enhancements**
+** Future Enhancements**
 
   AI-driven color-blind variant detection per user
   
@@ -126,7 +126,7 @@ The key is stored locally only — never uploaded.
   
   Auto-generate WCAG-safe color palettes
 
-**👨‍💻 Tech Stack**
+** Tech Stack**
 
   JavaScript
   
@@ -138,7 +138,7 @@ The key is stored locally only — never uploaded.
   
   Client-side DOM Analysis
 
-**🏆 Why PurePath?**
+**Why PurePath?**
 
 Most websites fail color contrast or alt text guidelines, creating barriers for 300M+ color-blind and visually impaired users.
 PurePath bridges that gap with instant AI-powered accessibility, making the web clearer, readable, and inclusive.
