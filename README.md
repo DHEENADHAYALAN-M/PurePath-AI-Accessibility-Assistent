@@ -112,29 +112,6 @@ The key is stored locally only — never uploaded.
   │── README.md
   │── LICENSE
 
-**🖼 Screenshots (Recommended to Upload)**
-
-Create folder:
-
-  /assets/screenshots/
-
-
-Suggested images to upload:
-
-  PurePath popup
-  
-  Accessibility score
-  
-  Developer Mode reports
-  
-  User Mode presets
-  
-  Before / After comparison
-
-Add them to README like:
-
-  ![Popup UI](assets/screenshots/popup.png)
-
 **🔮 Future Enhancements**
 
   AI-driven color-blind variant detection per user
